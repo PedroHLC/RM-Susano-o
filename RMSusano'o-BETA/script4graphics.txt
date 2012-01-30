@@ -1,0 +1,18 @@
+# Para que as imagens sejam exibidas, e necessario ter esse 
+# script antes de todos os outros.
+class Bitmap
+  alias entini initialize
+  def initialize(arg1, arg2='nilO')
+    if arg2 == 'nilO' and arg1.is_a?(String)
+      if File.exist?('./' + arg1 + '.rmi')
+        decrypt_img(arg1)
+        entini($TEMPIMG)
+        File.delete($TEMPIMG)
+      else
+        entini(arg1)
+      end
+    else
+      entini(arg1, arg2)
+    end
+  end
+end

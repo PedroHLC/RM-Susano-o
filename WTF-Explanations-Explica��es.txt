@@ -1,0 +1,14 @@
+--Português
+RGSSPlayerEx = É o RGSS Player editado para rodar com o projeto encriptado.
+RGSSPlayer3Ex = É o RGSS 3 Player editado para rodar com o projeto encriptado. Compatível com o RGSS 2.
+RM Susano'o Encrypter = É o programa usado para encriptar seu projeto.
+RMSusano'o-BETA = Pasta usada para criação do RAR final antes da encriptação.
+WinSock Fix = DLL necessária para compatibilidade com jogos online.
+Reader_*.rb = Responsável por refazerem método com a desencriptação, parar utiliza-los, é necessário passar pelo Script2SimpleStringForm, depois passar o resultado pelo protector e então adicioná-lo ao RGSSPlayerEX ou RGSSPlayer3Ex.
+
+--English
+RGSSPlayerEx = this is the RGSS Player edited to run the encrypted project.
+RGSSPlayer3Ex = this is the RGSS 3 Player edited to run the encrypted project. Compatible with RGSS 2.
+RM Suano'o Encrypter = this is the encrypter...
+RMSusano'o-BETA = Folder used to prepare the files for a publication.
+Reader_*.rb = these files are remakes of RGSS methods &/or classes, to put it in RGSSPlayerEx, before you'll need to use the Script2SimpleStringForm and put it into the protector, so get the result and then insert it into the RGSSPlayerEx.

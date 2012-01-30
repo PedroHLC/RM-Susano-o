@@ -1,0 +1,75 @@
+﻿+Titulo completo: <Sem nome>
++Titulo do projeto (Codename): RMSusano'o
++Engine: RPGMaker XP
++Autor: PedroHLC
++Versão: 0.7.3 - BETA
++Lançamento: 12/05/2011
++Ultima atualização: 09/10/2011
+
++Agradecimento:
+HugoLnx por dar inicio ao projeto, e aqueles q sempre me deram uma ideia Anderson Porto e DarkD.Vicious.
+Agradecimentos também ao 灼眼的夏娜, seu trabalho foi bem útel.
+
++Comentários:
+Não é novidade, mas todo mundo já sabe que não podemos contar com o 'RGSSAD' e nem o 'BlockXP' para proteger nossos jogos, porém essa tecnologia é nova e mais avançada que qualquer outra conhecida para RMs.
+
++Novidades (comparando com o RGSSPP)
+  * Quase compatível com os Netplays
+  * Não é mais necessário ser Administrador para jogar
+  * Também não é necessário copiar todo o RTP
+  * INCRIVELMENTE MAIS RÁPIDO!!
+
++Log de alterações
+  + 0.0.3
+    * Criação da chave de proteção customizada
+  + 0.0.4
+    * Erros em português.
+  + 0.0.5
+    * Código optimizada (+Velo)
+  + 0.2.0
+    * vgvgf RGSSAD Extractor bloqueado
+  + 0.5.0
+    * RGSS103J.DLL Incluída
+  + 0.5.1
+    * 60% Mais Rápido
+    * Online Switch
+    * RGSS102e.DLL Incluída
+  + 0.5.2
+    * Alguns códigos temporários foram removidos
+  + 0.5.3
+    * Código optimizado (+Velo)
+  + 0.6.0
+    * Menos Ruby Mais C++ (:-D)
+  + 0.6.1
+    * Bloqueio de Interceptações
+  + 0.6.2
+    * O aplicativo agora usa exclusivamente a RGSS versão 102E
+    * Não é mais necessário configurar se o jogo é online na INI, 
+    * Corrigido problema que fazia o aplicativo não responder no Windows Vista/Seven
+  + 0.6.3
+    * Proteção de áudio e imagens adicionadas
+    * Outras proteções foram adicionadas
+  + 0.7.0
+    * Encryptador convertido para C++
+    * Adicionado um arquivo de debug (experimental)
+  + 0.7.1
+    * RGSS.DLL agora é criada no %TEMP%
+    * Alguns bugs resolvidos
+    * Adicionado "RGSS - WinSock Fix"
+  + 0.7.2
+    * Bug do SE corrigido
+  + 0.7.3
+    * A senha não fica mais salva no key.cfg
+    * Número de caracteres da senha alterado para 9 digitos
+
++Para encryptar seu jogo siga os seguintes passos:
+0) Faça backups do seu projeto
+1) Extraia o aplicativo na pasta do seu projeto
+2) #SOMENTE SIGA ESTE PASSO SE SEU GAME FOR ONLINE:
+    Substitua o script "Winsock" (que já vem em seu Netplay) pelo que está no arquivo winsock(.txt)
+3) Adicione o script do arquivo script4graphics(.txt) nos scripts de seu jogo
+4) Abra o encrypter(.exe) e siga as instruções na tela
+5) Mova a pasta Backup para algum lugar seguro fora do projeto
+6) Apague estes arquivos encrypter(.exe), readme(.txt), debug(.txt), script4graphics(.txt), winsock(.txt), msvcr100d(.dll) e o leia-me(.txt)
+7) Delete todas as RGSS10*(.dll) que estão na pasta do projeto (se prescisar, deixe a RGSS102E)
+8) #somente siga este passo se seu game NÃO FOR online:  Delete o arquivo WSR(.dll)
