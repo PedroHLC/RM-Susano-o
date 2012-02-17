@@ -35,15 +35,6 @@ int dputs(char* str){
 	return puts(str);
 }
 //==============================================================================================================
-/*int simplify_afloat(char* str){
-     for(int i=(strlen(str) - 1); i >= 0; i--){
-       if(str[i]=='.'){
-		   str[i] = 0;
-           return i;
-	   }else str[i] = 0;
-     }
-     return 0;
-}*/
 int simplify_afloat_s(char* str, const size_t strsize){
      for(int i=(strsize - 1); i >= 0; i--){
        if(str[i]=='.'){
@@ -139,72 +130,6 @@ int encrypt_file(char* pathi, char* patho){
      fclose(new_file);
 
      return 0;
-}
-//==============================================================================================================
-int password_create(){
-	char noobpass[10];
-	char fpassc[4];
-	char fpass[12]="";
-	int i, noobsize=0;
-	FILE * rgssppkey_file;
-
-	dprintf("Dicas antes de criar uma senha:\n1-Use letras maisculas e minisculas.\n2-Use numeros.\n3-Nao use caracteres especiais.\n");
-	while(true){
-		dprintf("Type a password with 9 letters - Digite uma senha de 9 caracteres: ");
-		fflush(stdin);
-		scanf("%s", &noobpass);
-		noobsize = strlen(noobpass);
-		if(noobsize == 9) break;
-	}
-
-	encrypt_str(noobpass);
-	if(strlen(noobpass) != noobsize) return 0;
-	int t = 0;
-	for(int i = noobsize - 1; i >= noobsize - 4; i--)
-		t += noobpass[i];
-	srand(t);
-	
-	DWORD lpNumBytes;
-	HRSRC hRes = FindResource(NULL, MAKEINTRESOURCE (IDR_RCDATA1), RT_RCDATA);
-	
-	HGLOBAL hResLoad = LoadResource(NULL, hRes);
-	char* lpResLock = (char*)LockResource(hResLoad);
-	DWORD dwSizeRes = SizeofResource(NULL, hRes);
-
-	for(int i = 0x8F001; i <= 0x8F009; i++)
-		lpResLock[i] = (char)(rand() % 255);
-	lpResLock[0x8F002] = noobpass[0];
-	lpResLock[0x8F004] = noobpass[1];
-	lpResLock[0x8F006] = noobpass[2];
-	
-	HANDLE hFile = CreateFile(L".\\Game.exe", GENERIC_WRITE, NULL, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-	WriteFile(hFile, lpResLock, dwSizeRes, &lpNumBytes, NULL);
-	
-	FreeResource(hRes);
-	FreeResource(hResLoad);
-	CloseHandle(hFile);
-
-	strcpy(fpass, "");
-	for(i=0; i < 3; i++){
-		if((int)noobpass[i] < 0)
-			sprintf(fpassc, "%i", 256+(int)noobpass[i]);
-		else
-			sprintf(fpassc, "%i", (int)noobpass[i]);
-
-		strcat(fpass, fpassc);
-	}strcpy(fpassc, "\0");
-
-	/*rgssppkey_file = fopen(".\\key.cfg", "wb");
-	if(rgssppkey_file == 0){
-		dputs("Erro: Nao foi possivel criar o arquivo \"key.cfg\".");
-		return 0;
-		fclose(rgssppkey_file);
-	}else{
-		fprintf(rgssppkey_file, "%s", fpass);
-		fclose(rgssppkey_file);
-	}*/
-
-	return atoi(fpass);
 }
 //==============================================================================================================
 int encrypt_data(char* subpath){
@@ -532,12 +457,6 @@ int main(){
     dputs("# Agradecimentos a HugoLnx");
     dputs("#==============================================================================");
 
-	r = password_create();
-	if(r == 0)
-		goto __exit;
-	else
-		password = r;
-
 	dputs("-------------------------------------------------------------------------------\nCriando Backup...");
 	if(GetFolderExist(".\\Backup")){
 		dputs("Erro: A pasta \".\\Backup\" ja existe.\nAntes de continuar, verifique se o projeto ja esta compilado...\nCaso nao esteja, mova o seu conteudo para a pasta do projeto e delete-a.");
@@ -562,10 +481,6 @@ int main(){
 	dputs("-------------------------------------------------------------------------------\nCriando \"Audio\\Empty.rma\"...");
 	r = create_emptyaudio();
 	if(r == 0) goto __exit;
-
-	/*r = encrypt_file("Y:\\Projetos\\RPGXP\\RGSS Powerful Protection\\Novo\\Novo Encrypter\\arquivo", "Y:\\Projetos\\RPGXP\\RGSS Powerful Protection\\Novo\\Novo Encrypter\\arquivo_enc");
-	dputs("Teste realizado com sucesso!");
-    dprintf("Retornou: %i\n", r);*/
 
 __exit:
 	dputs("-------------------------------------------------------------------------------");
