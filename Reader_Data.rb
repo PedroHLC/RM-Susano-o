@@ -1,6 +1,5 @@
 begin
-  z = File.open('.\\Game.exe', 'rb').read
-  $rgsspp_key = (z[0x8F002].to_s + z[0x8F004].to_s + z[0x8F006].to_s).to_i
+  $rgsspp_key = HEY_PUT_A_SECRET_NUMBER_HERE
   $rgsspp_fn = Win32API.new('.\\Game.exe', 'ByPedroHLC', 'II', 'I')
 rescue
   print 'failed to decrypt game'
