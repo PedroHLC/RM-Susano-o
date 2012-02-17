@@ -304,27 +304,26 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//  RGSSPP
 	int i, z;
 	//Data
-	char cmd1[] = "mprtyF…+H+Qtwp9z{py329gRlxp9pƒp27+2}m249}ploF/}r~~{{jvp„+H+3…f;ƒCQ;;=h9zj~+6+…f;ƒCQ;;?h9zj~+6+…f;ƒCQ;;Ah9zj~49zjtF/}r~~{{jqy+H+bty>=L[T9yp‚329gRlxp9pƒp27+2M„[po}zSWN27+2TT27+2T24F}p~n€pF{}ty+2qltwpo+z+opn}„{+rlxp2Fpƒt3>>4FpyoFopq+wzlojoll3{ls4F~}+H+Qtwp9z{py3{ls7+2}m249}ploFq~t…p+H+~}9~t…pF{~‚+H+333~}9~t…p+:+=455=+6+/}r~~{{jvp„+6+<=4:=49zj~F/}r~~{{jqy9nlww3~}9jjtojj7+{~‚9jjtojj4F}p€}y+Xl}~slw9wzlo3~}4FpyoF";
-	for(i=0; i < 427; i++) cmd1[i] -= 11;
+	char cmd1[] = <!TOYOUDO Simplify and protect Reader_Data.rb>
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd1>; i++) cmd1[i] -= 11;
 	z = pRGSSEval(cmd1);
 	if(z == 6) MessageBoxA(hWnd, "Sorry, data decryption will not work.", "RGSS Player", 0);
-	for(i=0; i < 427; i++) cmd1[i] += 11;
-	/*//Graphics
-	char cmd2[] = ")YJRUNRL%B%JS[`,Yjru,b%0%,yjrunrl3ify,@ijk%ijhw~uydnrl-ufym.@ijxhtrunqjidnrl%B%Knqj3tujs-,34,%0%ufym%0%,3wrn,1%,wg,.3wjfi@ux|%B%---ijxhtrunqjidnrl3xnj%4%7.//7%0%)wlxxuudpj~%0%67.47.3ytdx@)wlxxuudks3hfqq-ijxhtrunqjidnrl3ddnidd1%ux|3ddnidd.@ux|%B%snq@ijxhtrunqjidknqj%B%Knqj3tujs-)YJRUNRL1%,|g,.@ijxhtrunqjidknqj3|wnyj-ijxhtrunqjidnrl.@ijxhtrunqjidknqj3hqtxj@jsi@";
-	for(i=0; i < 362; i++) cmd2[i] -= 5;
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd1>; i++) cmd1[i] += 11;
+	//Graphics
+	char cmd2[] = <!TOYOUDO Simplify and protect Reader_Image.rb>
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd2>; i++) cmd2[i] -= 5;
 	z = pRGSSEval(cmd2);
-	if(z == 6) MessageBoxA(hWnd, "Graphics decryption will not work.", "RGSS Player", 0);
-	for(i=0; i < 362; i++) cmd2[i] += 5;
+	if(z == 6) MessageBoxA(hWnd, "Sorry, graphics decryption will not work.", "RGSS Player", 0);
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd2>; i++) cmd2[i] += 5;
 	//Audio
-	char cmd3[] = "(XIQTEYH$A$IRZ_+Xiqt+a$/$+xiqteyh2hex+?(XIQTWI$A$IRZ_+Xiqt+a$/$+xiqtwi2hex+?qshypi$Eyhms?gpeww$@@$wipj?epmew$keqicgvmtxceyhmscfkqctpe}$fkqctpe}?epmew$keqicgvmtxceyhmscfkwctpe}$fkwctpe}?epmew$keqicgvmtxceyhmscqictpe}$$qictpe}?epmew$keqicgvmtxceyhmscwictpe}$$wictpe}?hij$fkqctpe},reqi0$zspyqiA5440$tmxglA544-?vixyvr$mj$reqi$AA$Dsphcfkqcreqi?Dsphcfkqcreqi$A$reqi?mj$reqi$%A$++$erh$Jmpi2i|mwxC,+23+$/$reqi$/$+2vqe+-?keqicgvmtxceyhmscfkqctpe},+23Eyhms3Iqtx}2vqe+0$5440$544-?hiwgsqtmpihceyh$A$Jmpi2stir,+23+$/$reqi$/$+2vqe+0$+vf+-2vieh2xscw?tw{$A$,,,hiwgsqtmpihceyh2wm~i$3$6-..6$/$(vkwwttcoi}$/$56-36-2xscw?(vkwwttcjr2gepp,hiwgsqtmpihceyh2ccmhcc0$tw{2ccmhcc-?tw{$A$rmp?hiwgsqtmpihcjmpi$A$Jmpi2stir,(XIQTEYH0$+{f+-?hiwgsqtmpihcjmpi2{vmxi,hiwgsqtmpihceyh-?hiwgsqtmpihcjmpi2gpswi?reqi$A$(XIQTEYH?irh?viwypx$A$keqicgvmtxceyhmscfkqctpe},reqi0$zspyqi0$tmxgl-?Jmpi2hipixi,(XIQTEYH-$mj$Jmpi2i|mwxC,(XIQTEYH-?vixyvr$viwypx?irh?hij$fkwctpe},reqi0$zspyqiA5440$tmxglA544-?vixyvr$mj$reqi$AA$Dsphcfkwcreqi?Dsphcfkwcreqi$A$reqi?mj$reqi$%A$++$erh$Jmpi2i|mwxC,+23+$/$reqi$/$+2vqe+-?keqicgvmtxceyhmscfkwctpe},+23Eyhms3Iqtx}2vqe+0$5440$544-?hiwgsqtmpihceyh$A$Jmpi2stir,+23+$/$reqi$/$+2vqe+0$+vf+-2vieh2xscw?tw{$A$,,,hiwgsqtmpihceyh2wm~i$3$6-..6$/$(vkwwttcoi}$/$56-36-2xscw?(vkwwttcjr2gepp,hiwgsqtmpihceyh2ccmhcc0$tw{2ccmhcc-?tw{$A$rmp?hiwgsqtmpihcjmpi$A$Jmpi2stir,(XIQTEYH0$+{f+-?hiwgsqtmpihcjmpi2{vmxi,hiwgsqtmpihceyh-?hiwgsqtmpihcjmpi2gpswi?reqi$A$(XIQTEYH?irh?viwypx$A$keqicgvmtxceyhmscfkwctpe},reqi0$zspyqi0$tmxgl-?Jmpi2hipixi,(XIQTEYH-$mj$Jmpi2i|mwxC,(XIQTEYH-?vixyvr$viwypx?irh?hij$qictpe},reqi0$zspyqiA5440$tmxglA544-?vixyvr$mj$reqi$AA$Dsphcqicreqi?Dsphcqicreqi$A$reqi?mj$reqi$%A$++$erh$Jmpi2i|mwxC,+23+$/$reqi$/$+2vqe+-?keqicgvmtxceyhmscqictpe},+23Eyhms3Iqtx}2vqe+0$5440$544-?hiwgsqtmpihceyh$A$Jmpi2stir,+23+$/$reqi$/$+2vqe+0$+vf+-2vieh2xscw?tw{$A$,,,hiwgsqtmpihceyh2wm~i$3$6-..6$/$(vkwwttcoi}$/$56-36-2xscw?(vkwwttcjr2gepp,hiwgsqtmpihceyh2ccmhcc0$tw{2ccmhcc-?tw{$A$rmp?hiwgsqtmpihcjmpi$A$Jmpi2stir,(XIQTEYH0$+{f+-?hiwgsqtmpihcjmpi2{vmxi,hiwgsqtmpihceyh-?hiwgsqtmpihcjmpi2gpswi?reqi$A$(XIQTEYH?irh?viwypx$A$keqicgvmtxceyhmscqictpe},reqi0$zspyqi0$tmxgl-?Jmpi2hipixi,(XIQTEYH-$mj$Jmpi2i|mwxC,(XIQTEYH-?vixyvr$viwypx?irh?hij$wictpe},reqi0$zspyqiA5440$tmxglA544-?mj$reqi$%A$++$erh$Jmpi2i|mwxC,+23+$/$reqi$/$+2vqe+-?vixyvr$keqicgvmtxceyhmscwictpe},(XIQTWI0$zspyqi0$tmxgl-$mj$Dsphcwicreqi$AA$reqi?keqicgvmtxceyhmscwictpe},+23Eyhms3Iqtx}2vqe+0$5440$544-?hiwgsqtmpihceyh$A$Jmpi2stir,+23+$/$reqi$/$+2vqe+0$+vf+-2vieh2xscw?tw{$A$,,,hiwgsqtmpihceyh2wm~i$3$6-..6$/$(vkwwttcoi}$/$56-36-2xscw?(vkwwttcjr2gepp,hiwgsqtmpihceyh2ccmhcc0$tw{2ccmhcc-?tw{$A$rmp?hiwgsqtmpihcjmpi$A$Jmpi2stir,(XIQTWI0$+{f+-?hiwgsqtmpihcjmpi2{vmxi,hiwgsqtmpihceyh-?hiwgsqtmpihcjmpi2gpswi?reqi$A$(XIQTWI?irh?Dsphcwicreqi$A$reqi?viwypx$A$keqicgvmtxceyhmscwictpe},reqi0$zspyqi0$tmxgl-?vixyvr$viwypx?irh?irh?irh?";
-	for(i=0; i < 2851; i++) cmd3[i] -= 4;
+	char cmd3[] = <!TOYOUDO Simplify and protect Reader_Audio.rb>
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd3>; i++) cmd3[i] -= 4;
 	z = pRGSSEval(cmd3);
-	if(z == 6) MessageBoxA(hWnd, "Audio decryption will not work.", "RGSS Player", 0);
-	for(i=0; i < 2851; i++) cmd3[i] += 4;
-	//pRGSSEval("eval(File.open('Reader_Audio;.rb','r').read)");
+	if(z == 6) MessageBoxA(hWnd, "Sorry, audio decryption will not work.", "RGSS Player", 0);
+	for(i=0; i < <!TOYOUDO Put here the lenght of cmd3>; i++) cmd3[i] += 4;
 	
 	//	3¡¢ÉèÖÃÔËÐÐÊ±±äÁ¿
-	//pRGSSEval("$TEST = false;$BTEST = false;");*/
+	pRGSSEval("$TEST = false;$BTEST = false;");*/
 	
 	//	4¡¢Ö÷Âß¼­
 	pRGSSGameMain(hWnd, szScripts, (pRgssad ? (wchar_t**)pRgssad : &pRgssad));	//	???
